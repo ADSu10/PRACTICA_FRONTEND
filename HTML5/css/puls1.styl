@@ -22,10 +22,13 @@ gris_oscuro = #444
 a 
 	color naranja
 body
-	background #ccc
+	background #E8E8E8
 	color gris_oscuro
+	font-family Arial
 	font-size 16px
 
+figure 
+	margin 0 
 footer
 	background naranja
 	color rgba(white,0.5)
@@ -174,7 +177,7 @@ nav
 	.post
 		background white
 		border-radius 0 0 0.5em 0.5em
-		box-shadow 2px 2px 10px rgba(black,0.1)
+		box-shadow 2px 2px 10px rgba(black,0.5)
 		color gris_texto
 		margin-bottom 0.5em
 
@@ -191,7 +194,7 @@ nav
 					border-radius 3px
 					color white
 					margin 0 1em 0 0 
-					padding 2px 2px
+					padding 2px 5px
 					text-decoration none
 
 				.estrellita
@@ -230,8 +233,9 @@ nav
 				height 160px
 				margin-left 130px
 
+
 				.autor
-					margin 0.5em 0.2em 0
+					margin 0.5em 0 2em 0
 
 				.fecha 
 					float right
@@ -254,10 +258,33 @@ nav
 			.imagen
 				float left
 
-				img 
+				img
 					height 160px
 					vertical-align top
 					width 120px
+@media screen and (min-width: 768px)
+
+	header
+		.titular
+			.publicar
+				font-size 1.1em
+				padding-left 3em
+				position relative
+
+				&:before
+					left 0
+					font-size 2.5em
+					position absolute
+					top -10px
+
+	.posts
+		.post
+			display inline-block
+			width 48%
+			vertical-align top
+			&:nth-child(odd)
+				margin-right 2%
+
 
 
 
